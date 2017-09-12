@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from selenium.webdriver.firefox.webdriver import WebDriver
 import unittest
+from contact import Contact
 
 
 def is_alert_present(wd):
@@ -31,17 +32,17 @@ class TestAddContact(unittest.TestCase):
     def open_add_new_contact_page(self, wd):
         wd.find_element_by_link_text("add new").click()
 
-    def create_new_contact(self, wd, firstname, mobile, email):
+    def create_new_contact(self, wd, contact):
         wd.find_element_by_name("firstname").click()
         wd.find_element_by_name("firstname").clear()
-        wd.find_element_by_name("firstname").send_keys(firstname)
+        wd.find_element_by_name("firstname").send_keys(contact.name)
         wd.find_element_by_name("theform").click()
         wd.find_element_by_name("mobile").click()
         wd.find_element_by_name("mobile").clear()
-        wd.find_element_by_name("mobile").send_keys(mobile)
+        wd.find_element_by_name("mobile").send_keys(contact.mobile)
         wd.find_element_by_name("email").click()
         wd.find_element_by_name("email").clear()
-        wd.find_element_by_name("email").send_keys(email)
+        wd.find_element_by_name("email").send_keys(contact.email)
         wd.find_element_by_xpath("//div[@id='content']/form/input[21]").click()
 
     def return_to_home_page(self, wd):
@@ -56,7 +57,7 @@ class TestAddContact(unittest.TestCase):
         self.open_home_page(wd)
         self.login(wd, username="admin", password="secret")
         self.open_add_new_contact_page(wd)
-        self.create_new_contact(wd, firstname="Natasha", mobile="55555555555", email="nataliia.hubenko@gmail.com")
+        self.create_new_contact(wd, Contact(name="Natasha", mobile="55555555555", email="nataliia.hubenko@gmail.com"))
         self.return_to_home_page(wd)
         self.logout(wd)
         self.assertTrue(success)
@@ -67,7 +68,7 @@ class TestAddContact(unittest.TestCase):
         self.open_home_page(wd)
         self.login(wd, username="admin", password="secret")
         self.open_add_new_contact_page(wd)
-        self.create_new_contact(wd, firstname="Max", mobile="454545454545", email="max@gmail.com")
+        self.create_new_contact(wd, Contact(name="Max", mobile="454545454545", email="max@gmail.com"))
         self.return_to_home_page(wd)
         self.logout(wd)
         self.assertTrue(success)
