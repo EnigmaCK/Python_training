@@ -21,6 +21,7 @@ class TestAddContact(unittest.TestCase):
         wd.get("http://localhost/addressbook/")
 
     def login(self, wd, username, password):
+        self.open_home_page(wd)
         wd.find_element_by_name("user").click()
         wd.find_element_by_name("user").clear()
         wd.find_element_by_name("user").send_keys(username)
@@ -33,6 +34,7 @@ class TestAddContact(unittest.TestCase):
         wd.find_element_by_link_text("add new").click()
 
     def create_new_contact(self, wd, contact):
+        self.open_add_new_contact_page(wd)
         wd.find_element_by_name("firstname").click()
         wd.find_element_by_name("firstname").clear()
         wd.find_element_by_name("firstname").send_keys(contact.name)
@@ -44,6 +46,7 @@ class TestAddContact(unittest.TestCase):
         wd.find_element_by_name("email").clear()
         wd.find_element_by_name("email").send_keys(contact.email)
         wd.find_element_by_xpath("//div[@id='content']/form/input[21]").click()
+        self.return_to_home_page(wd)
 
     def return_to_home_page(self, wd):
         wd.find_element_by_link_text("home page").click()
@@ -54,22 +57,16 @@ class TestAddContact(unittest.TestCase):
     def test_add_contact(self):
         success = True
         wd = self.wd
-        self.open_home_page(wd)
         self.login(wd, username="admin", password="secret")
-        self.open_add_new_contact_page(wd)
         self.create_new_contact(wd, Contact(name="Natasha", mobile="55555555555", email="nataliia.hubenko@gmail.com"))
-        self.return_to_home_page(wd)
         self.logout(wd)
         self.assertTrue(success)
 
     def test_add_second_contact(self):
         success = True
         wd = self.wd
-        self.open_home_page(wd)
         self.login(wd, username="admin", password="secret")
-        self.open_add_new_contact_page(wd)
         self.create_new_contact(wd, Contact(name="Max", mobile="454545454545", email="max@gmail.com"))
-        self.return_to_home_page(wd)
         self.logout(wd)
         self.assertTrue(success)
 
