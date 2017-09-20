@@ -5,7 +5,7 @@ from fixture.group import GroupHelper
 from fixture.contact import ContactHelper
 
 
-class ApplicationGroup:
+class Application:
 
     def __init__(self):
         self.wd = WebDriver(capabilities={"marionette": False})
