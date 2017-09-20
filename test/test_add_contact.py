@@ -13,13 +13,13 @@ def app(request):
 
 
 def test_add_contact(app):
-        app.login(username="admin", password="secret")
+        app.session.login(username="admin", password="secret")
         app.create_new_contact(Contact(name="Natasha", mobile="55555555555", email="nataliia.hubenko@gmail.com"))
-        app.logout()
+        app.session.logout()
 
 
 def test_add_second_contact(app):
-        app.login(username="admin", password="secret")
+        app.session.login(username="admin", password="secret")
         app.create_new_contact(Contact(name="Max", mobile="454545454545", email="max@gmail.com"))
-        app.logout()
+        app.session.logout()
 
