@@ -21,7 +21,7 @@ class ContactHelper:
 
     def fill_contact_form(self, contact):
         wd = self.app.wd
-        self.change_field_value("firstname", contact.name)
+        self.change_field_value("firstname", contact.firstname)
         self.change_field_value("lastname", contact.lastname)
         self.change_field_value("mobile", contact.mobile)
         self.change_field_value("email", contact.email)
@@ -103,7 +103,7 @@ class ContactHelper:
                 all_phones = cells[5].text
                 address = cells[3].text
                 all_emails = cells[4].text
-                self.contact_cache.append(Contact(lastname=lastname, name=name, address=address, id=id,
+                self.contact_cache.append(Contact(lastname=lastname, firstname=name, address=address, id=id,
                                                   all_phones_from_home_page=all_phones, all_emails_from_home_page=all_emails))
         return list(self.contact_cache)
 
@@ -128,7 +128,7 @@ class ContactHelper:
         workphone = wd.find_element_by_name("work").get_attribute("value")
         mobile = wd.find_element_by_name("mobile").get_attribute("value")
         secondaryphone = wd.find_element_by_name("phone2").get_attribute("value")
-        return Contact(name=name, lastname=lastname, id=id, address=address, email=email,
+        return Contact(firstname=name, lastname=lastname, id=id, address=address, email=email,
                        secondemail=secondemail, thirdemail=thirdemail,
                        homephone=homephone, workphone=workphone,
                        mobile=mobile, secondaryphone=secondaryphone)
