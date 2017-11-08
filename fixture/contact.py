@@ -148,6 +148,11 @@ class ContactHelper:
         cell = row.find_elements_by_tag_name("td")[6]
         cell.find_element_by_tag_name("a").click()
 
+    def open_contact_view_by_id(self, id):
+        wd = self.app.wd
+        self.app.open_home_page()
+        wd.find_element_by_xpath("//a[@href='view.php?id=%s']" % id).click()
+
     def get_contact_info_from_edit_page(self, index):
         wd = self.app.wd
         self.open_contact_to_edit_by_index(index)
@@ -185,3 +190,12 @@ class ContactHelper:
         wd.find_element_by_xpath("//select[@name='to_group']//option[@value='%s']" % group_id).click()
         wd.find_element_by_name("add").click()
         wd.find_element_by_xpath("//div/div[4]/div/i/a").click()
+
+    def del_contact_from_group(self, contact_id, group_id):
+        wd = self.app.wd
+        self.app.open_home_page()
+        self.open_contact_view_by_id(contact_id)
+        wd.find_element_by_xpath("//a[@href='./index.php?group=%s']" % group_id).click()
+        self.select_contact_by_id(contact_id)
+        wd.find_element_by_name("remove").click()
+        self.app.open_home_page()

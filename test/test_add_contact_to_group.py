@@ -5,6 +5,7 @@ from fixture.orm import ORMFixture
 
 db = ORMFixture(host='127.0.0.1', name="addressbook", user="root", password="")
 
+
 def test_add_contact_to_group(app):
     if len(db.get_group_list()) == 0:
         app.group.create(Group(name="test group"))
