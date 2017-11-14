@@ -43,6 +43,7 @@ def random_group(non_empty_group_list):
 def delete_group(app, random_group):
     app.group.delete_group_by_id(random_group.id)
 
+
 @then("the new group list is equal to the old list without the deleted group")
 def verufy_group_deleted(db, non_empty_group_list, random_group, app, check_ui):
     old_groups = non_empty_group_list
@@ -76,7 +77,7 @@ def modify_group(app, random_group, group_parameters):
 
 
 @then('the new  list is equal to the old list with the modified group')
-def verufy_modified_group(db, non_empty_group_list, random_group, group_parameters, app, check_ui):
+def verify_modified_group(db, non_empty_group_list, random_group, group_parameters, app, check_ui):
     old_groups = non_empty_group_list
     new_groups = db.get_group_list()
     old_groups[old_groups.index(random_group)].name = group_parameters.name
