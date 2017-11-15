@@ -1,0 +1,56 @@
+{
+  "uid" : "c2b23fab0fca3c50",
+  "name" : "test_add_contact[None:name2PfHl; lastnamee3y2; addressumZH9yl; None; None; None; 3578Do; 159pcinpeLT; None; None]",
+  "title" : "Test add contact [None:name2PfHl; lastnamee3y2; addressumZH9yl; None; None; None; 3578Do; 159pcinpeLT; None; None]",
+  "time" : {
+    "start" : 1510773031395,
+    "stop" : 1510773040276,
+    "duration" : 8881
+  },
+  "summary" : {
+    "attachments" : 1,
+    "steps" : 0
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "suite" : {
+    "uid" : "60eb1e6362af27b1",
+    "name" : "test.test_add_contact",
+    "title" : "Test add contact"
+  },
+  "steps" : [ ],
+  "attachments" : [ {
+    "title" : "Captured stdout call",
+    "source" : "ff6204c1-158a-435f-9b25-8ea32ab952ae-attachment.txt",
+    "type" : "text/plain",
+    "size" : 396,
+    "uid" : "47c4e57985a2a12"
+  } ],
+  "issues" : [ ],
+  "testIds" : [ ],
+  "labels" : [ {
+    "name" : "thread",
+    "value" : "12908-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "suite-name",
+    "value" : "test.test_add_contact"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-IVAM6HI"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  } ],
+  "parameters" : [ ]
+}

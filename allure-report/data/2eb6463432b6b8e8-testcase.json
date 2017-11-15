@@ -1,0 +1,56 @@
+{
+  "uid" : "2eb6463432b6b8e8",
+  "name" : "test_add_group[None: nameepkj; header3PNVM; footerDlchegWw]",
+  "title" : "Test add group [None: nameepkj; header3PNVM; footerDlchegWw]",
+  "time" : {
+    "start" : 1510773068602,
+    "stop" : 1510773072187,
+    "duration" : 3585
+  },
+  "summary" : {
+    "attachments" : 1,
+    "steps" : 0
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "suite" : {
+    "uid" : "30ed72336c31e315",
+    "name" : "test.test_add_group",
+    "title" : "Test add group"
+  },
+  "steps" : [ ],
+  "attachments" : [ {
+    "title" : "Captured stdout call",
+    "source" : "f7fba409-d67b-43f7-a417-4897ece3cae2-attachment.txt",
+    "type" : "text/plain",
+    "size" : 328,
+    "uid" : "ccc4ae6a6513ffc1"
+  } ],
+  "issues" : [ ],
+  "testIds" : [ ],
+  "labels" : [ {
+    "name" : "thread",
+    "value" : "12908-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-IVAM6HI"
+  }, {
+    "name" : "suite-name",
+    "value" : "test.test_add_group"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  } ],
+  "parameters" : [ ]
+}

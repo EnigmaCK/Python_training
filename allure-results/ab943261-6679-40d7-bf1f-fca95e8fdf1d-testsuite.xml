@@ -1,0 +1,34 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1510773912118" stop="1510773929091">
+  <name>test.test_db_matches_ui</name>
+  <labels/>
+  <test-cases>
+    <test-case start="1510773912118" status="passed" stop="1510773928757">
+      <name>test_group_list</name>
+      <attachments>
+        <attachment source="370b8cb4-6f35-4d9a-baff-58b5e08acc68-attachment.txt" title="Captured stdout call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="8532-MainThread"/>
+        <label name="host" value="DESKTOP-IVAM6HI"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1510773928767" status="passed" stop="1510773929091">
+      <name>test_contact_list</name>
+      <attachments>
+        <attachment source="2463b0a4-ddb4-4c1b-a986-281d19ca7dfe-attachment.txt" title="Captured stdout call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="8532-MainThread"/>
+        <label name="host" value="DESKTOP-IVAM6HI"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>

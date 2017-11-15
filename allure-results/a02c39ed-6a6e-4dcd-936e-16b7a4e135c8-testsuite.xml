@@ -1,0 +1,20 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1510773929101" stop="1510773934742">
+  <name>test.test_del_contact</name>
+  <labels/>
+  <test-cases>
+    <test-case start="1510773929101" status="passed" stop="1510773934742">
+      <name>test_delete_some_contact</name>
+      <attachments>
+        <attachment source="173d148d-8b0a-4344-808d-87841adbb172-attachment.txt" title="Captured stdout call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="8532-MainThread"/>
+        <label name="host" value="DESKTOP-IVAM6HI"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>

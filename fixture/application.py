@@ -3,6 +3,7 @@ from selenium import webdriver
 from fixture.session import SessionHelper
 from fixture.group import GroupHelper
 from fixture.contact import ContactHelper
+from selenium.webdriver.chrome.options import Options
 
 
 class Application:
@@ -11,7 +12,10 @@ class Application:
         if browser == "firefox":
             self.wd = webdriver.Firefox(capabilities={"marionette": False})
         elif browser == "chrome":
-            self.wd = webdriver.Chrome()
+            opts = Options()
+            # opts.add_argument("--headless")
+            # opts.add_argument("disable-infobars")
+            self.wd = webdriver.Chrome(chrome_options=opts)
         elif browser == "ie":
             self.wd = webdriver.Ie()
         else:

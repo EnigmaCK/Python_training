@@ -1,0 +1,101 @@
+{
+  "uid" : "d46c49ff54e48a6f",
+  "name" : "test_add_group[None: ; ; ]",
+  "title" : "Test add group [None: ; ; ]",
+  "time" : {
+    "start" : 1510773597808,
+    "stop" : 1510773621618,
+    "duration" : 23810
+  },
+  "summary" : {
+    "attachments" : 1,
+    "steps" : 3
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "suite" : {
+    "uid" : "d8ce52ff8d8f46ac",
+    "name" : "test.test_add_group",
+    "title" : "Test add group"
+  },
+  "steps" : [ {
+    "name" : "Given a group list",
+    "title" : "Given a group list",
+    "time" : {
+      "start" : 1510773616907,
+      "stop" : 1510773616929,
+      "duration" : 22
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "When I add the None: ; ;  to the list",
+    "title" : "When I add the None: ; ;  to the list",
+    "time" : {
+      "start" : 1510773616929,
+      "stop" : 1510773621590,
+      "duration" : 4661
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "Then the new group list is equal to the old list with the added group",
+    "title" : "Then the new group list is equal to the old list with the added group",
+    "time" : {
+      "start" : 1510773621590,
+      "stop" : 1510773621615,
+      "duration" : 25
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ {
+    "title" : "Captured stdout call",
+    "source" : "b9cc4701-7a9d-4eed-8ef0-1fd69dcb7dc1-attachment.txt",
+    "type" : "text/plain",
+    "size" : 328,
+    "uid" : "e04fe0d7ec7c21dc"
+  } ],
+  "issues" : [ ],
+  "testIds" : [ ],
+  "labels" : [ {
+    "name" : "thread",
+    "value" : "12116-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-IVAM6HI"
+  }, {
+    "name" : "suite-name",
+    "value" : "test.test_add_group"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  } ],
+  "parameters" : [ ]
+}

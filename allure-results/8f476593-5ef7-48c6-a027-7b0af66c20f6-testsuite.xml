@@ -1,0 +1,48 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1510773810966" stop="1510773851485">
+  <name>test.test_add_contact</name>
+  <labels/>
+  <test-cases>
+    <test-case start="1510773810966" status="passed" stop="1510773833601">
+      <name>test_add_contact[None:; ; ; ; None; None; ; ; None; None]</name>
+      <attachments>
+        <attachment source="3e56f5e7-a8b9-48a1-9ec8-0e77a50d7ca8-attachment.txt" title="Captured stdout call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="8532-MainThread"/>
+        <label name="host" value="DESKTOP-IVAM6HI"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1510773833614" status="passed" stop="1510773842332">
+      <name>test_add_contact[None:name2PfHl; lastnamee3y2; addressumZH9yl; None; None; None; 3578Do; 159pcinpeLT; None; None]</name>
+      <attachments>
+        <attachment source="602ee497-26f4-4558-8760-b497b216bce3-attachment.txt" title="Captured stdout call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="8532-MainThread"/>
+        <label name="host" value="DESKTOP-IVAM6HI"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1510773842342" status="passed" stop="1510773851485">
+      <name>test_add_contact[None:namefV; lastnameGxjyn; addressQlRbgTZOCf; None; None; None; 35789WXt; 159J0vt0; None; None]</name>
+      <attachments>
+        <attachment source="58edc789-6a57-4d2a-ad6c-2cf341145eab-attachment.txt" title="Captured stdout call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="8532-MainThread"/>
+        <label name="host" value="DESKTOP-IVAM6HI"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>

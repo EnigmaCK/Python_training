@@ -1,0 +1,101 @@
+{
+  "uid" : "8d4df9e037e3b900",
+  "name" : "test_add_group[None: namec; headerNn8taTr; footer87JLvD9ilAd4c]",
+  "title" : "Test add group [None: namec; headerNn8taTr; footer87JLvD9ilAd4c]",
+  "time" : {
+    "start" : 1510773621623,
+    "stop" : 1510773625688,
+    "duration" : 4065
+  },
+  "summary" : {
+    "attachments" : 1,
+    "steps" : 3
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "suite" : {
+    "uid" : "d8ce52ff8d8f46ac",
+    "name" : "test.test_add_group",
+    "title" : "Test add group"
+  },
+  "steps" : [ {
+    "name" : "Given a group list",
+    "title" : "Given a group list",
+    "time" : {
+      "start" : 1510773622181,
+      "stop" : 1510773622198,
+      "duration" : 17
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "When I add the None: namec; headerNn8taTr; footer87JLvD9ilAd4c to the list",
+    "title" : "When I add the None: namec; headerNn8taTr; footer87JLvD9ilAd4c to the list",
+    "time" : {
+      "start" : 1510773622198,
+      "stop" : 1510773625667,
+      "duration" : 3469
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "Then the new group list is equal to the old list with the added group",
+    "title" : "Then the new group list is equal to the old list with the added group",
+    "time" : {
+      "start" : 1510773625667,
+      "stop" : 1510773625686,
+      "duration" : 19
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ {
+    "title" : "Captured stdout call",
+    "source" : "7bceb7f2-a2a3-4cdd-8564-561977723be6-attachment.txt",
+    "type" : "text/plain",
+    "size" : 328,
+    "uid" : "5593ad4fc31b7fc9"
+  } ],
+  "issues" : [ ],
+  "testIds" : [ ],
+  "labels" : [ {
+    "name" : "thread",
+    "value" : "12116-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-IVAM6HI"
+  }, {
+    "name" : "suite-name",
+    "value" : "test.test_add_group"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  } ],
+  "parameters" : [ ]
+}

@@ -1,0 +1,56 @@
+{
+  "uid" : "568f11c2ea6f63dc",
+  "name" : "test_delete_some_group",
+  "title" : "Test delete some group",
+  "time" : {
+    "start" : 1510772018141,
+    "stop" : 1510772027657,
+    "duration" : 9516
+  },
+  "summary" : {
+    "attachments" : 1,
+    "steps" : 0
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "suite" : {
+    "uid" : "aa26ed30de28f40e",
+    "name" : "test.test_del_group",
+    "title" : "Test del group"
+  },
+  "steps" : [ ],
+  "attachments" : [ {
+    "title" : "Captured stdout call",
+    "source" : "a505772b-31d5-4e36-b39c-dfeee6a6654b-attachment.txt",
+    "type" : "text/plain",
+    "size" : 492,
+    "uid" : "bbe8d178ace9683b"
+  } ],
+  "issues" : [ ],
+  "testIds" : [ ],
+  "labels" : [ {
+    "name" : "thread",
+    "value" : "5160-MainThread"
+  }, {
+    "name" : "suite-name",
+    "value" : "test.test_del_group"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-IVAM6HI"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  } ],
+  "parameters" : [ ]
+}
